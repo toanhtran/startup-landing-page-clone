@@ -1,3 +1,15 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -30,33 +42,46 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/*End of Reset*/
+/*Start of Custom Styles*/
 
+.content {
+	padding: 0 15px;
+}
 body {
-	background-color: LightGray;
+	/*background-color: LightGray;*/
 }
 div	{
-	border: 1px solid Chocolate;
+	/*border: 1px solid Chocolate;*/
 }
 
 /*Navigation Section*/
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid;
 }
 
 .top-navigation > .content {
+	margin: 0 auto;
 	width: 970px;
 	height: 70px;
-	margin: 0 auto;
 }
+
+.top-navigation .logo {
+	height: 70px;
+	
+}
+ 
+ .top-navigation .links {
+ 	float: right; 
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+
+
