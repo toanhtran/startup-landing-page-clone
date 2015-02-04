@@ -64,35 +64,43 @@ div {
     margin: 0 auto;
     min-width: 37.5rem;
 }
-:focus {
-    outline: none;
-}
 
 /**
  * Navigation Section
  */
+
+
 .top-navigation {
+    top:0px;         /* ______________________Added Top property and set it to 0 */                               
     background-color: #fff;
     position: fixed;
     width: 100%;
     border-bottom: 1px solid #DDD;
     z-index: 9999;
+   
 }
+
 .top-navigation > .content {
     height: 4.375rem;
+    float: left;
 }
 .top-navigation .logo {
     height: 4.375rem;
+    float: right;
+    margin-left: 280px;
+   
 }
 .top-navigation .links {
     float: right;
     color: #838994;
     font-size: 1.04rem;
     margin-top: 1.7rem;
+    margin-left: 17.5rem;
 }
 .top-navigation .links li {
     display: inline-block;
     margin-left: 1.563rem;
+
 }
 .top-navigation .links li.active {
     color: #4c5058;
@@ -112,6 +120,7 @@ div {
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
+    text-align: center;
     overflow: auto;
 }
 .introduction h1,
@@ -151,13 +160,20 @@ div {
 .cases {
     background-color: #fff;
     overflow: hidden;
+    padding-left: 18rem;
+    padding-right: 18rem;
     padding-bottom: 5rem;
+    padding-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .cases .content {
-    margin-top: 7.875rem;
-    padding: none;
+    margin-top: 2.875rem;
+    padding left: 380px;
     color: #1d1e21;
     text-align: center;
+
 }
 .cases h2 {
     font-size: 2.75rem;
@@ -201,6 +217,7 @@ div {
     border: 1px solid #eaebec;
     padding: 0.625rem 0;
     text-align: center;
+
 }
 .social .icons > li:hover {
     cursor: pointer;
@@ -219,12 +236,11 @@ div {
     font-weight: 300;
     color: #838994;
 }
-
-
 /**
  * button
  */
 button {
+    margin-top: 20px;
     width: 9.688rem;
     background-color: #f15a29;
     border-color: #f15a29;
@@ -234,6 +250,8 @@ button {
     padding: 1rem 1.5rem;
     color: white;
     font-size: 1.125rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 button:hover {
     background-color: #d9400e;
